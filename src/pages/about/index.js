@@ -1,15 +1,17 @@
-import React from "react";
-import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Row, Col, Card, Container } from "react-bootstrap";
-import { dataabout, meta, worktimeline, skills } from "../../content_option";
+import React, { useRef, useEffect } from 'react';
+import './style.css';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Row, Col, Card, Container } from 'react-bootstrap';
+import { dataabout, meta, worktimeline, skills } from '../../content_option';
 
 export const About = () => {
-  const theme = document.documentElement.getAttribute("data-theme");
-  const tableStyle = {
-    backgroundColor: theme === "dark" ? "black" : "white",
-    color: theme === "dark" ? "white" : "black",
-  };
+  const themeRef = useRef();
+  const theme = themeRef.current;
+
+  useEffect(() => {
+    themeRef.current = document.documentElement.getAttribute('data-theme');
+  }, []);
+
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -41,28 +43,22 @@ export const About = () => {
           <Col lg="7">
             <table className="table caption-top">
               <tbody>
-                {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th
-                        style={{ color: theme === "dark" ? "white" : "black" }}
-                        scope="row"
-                      >
-                        {data.jobtitle}
-                      </th>
-                      <td
-                        style={{ color: theme === "dark" ? "white" : "black" }}
-                      >
-                        {data.where}
-                      </td>
-                      <td
-                        style={{ color: theme === "dark" ? "white" : "black" }}
-                      >
-                        {data.date}
-                      </td>
-                    </tr>
-                  );
-                })}
+                {worktimeline.map((data, i) => (
+                  <tr key={i}>
+                    <th
+                      style={{ color: theme === 'dark' ? 'white' : 'black' }}
+                      scope="row"
+                    >
+                      {data.jobtitle}
+                    </th>
+                    <td style={{ color: theme === 'dark' ? 'white' : 'black' }}>
+                      {data.where}
+                    </td>
+                    <td style={{ color: theme === 'dark' ? 'white' : 'black' }}>
+                      {data.date}
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </Col>
@@ -72,17 +68,15 @@ export const About = () => {
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
           <Col lg="7" className="grid-container">
-            {skills.map((skills, i) => {
-              return (
-                <div key={i}>
-                  <Card className="skill-card">
-                    <Card.Body>
-                      <h3 className="card-title">{skills.name}</h3>
-                    </Card.Body>
-                  </Card>
-                </div>
-              );
-            })}
+            {skills.map((skill, i) => (
+              <div key={i}>
+                <Card className="skill-card">
+                  <Card.Body>
+                    <h3 className="card-title">{skill.name}</h3>
+                  </Card.Body>
+                </Card>
+              </div>
+            ))}
           </Col>
         </Row>
       </Container>

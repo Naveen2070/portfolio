@@ -23,7 +23,7 @@ export const ContactUs = () => {
 
     const templateParams = {
       from_name: formData.email,
-      user_name: formData.name,
+      name: formData.name,
       to_name: contactConfig.YOUR_EMAIL,
       message: formData.message,
     };
@@ -43,6 +43,7 @@ export const ContactUs = () => {
             alertmessage: "SUCCESS! , Looking forward to reading your email.",
             variant: "success",
             show: true,
+            message: "",
           });
         },
         (error) => {

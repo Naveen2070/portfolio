@@ -1,22 +1,23 @@
-const logotext = "{Initials Here}";
+const logotext = "N";
 const meta = {
-  title: "{Your name}",
-  description: "I'm {Your name}, a technologist and cybersecurity enthuist.",
+  title: "Naveen R",
+  description:
+    "I'm Naveen, a technologist, technophile and MERN stack developer.",
 };
 
 const introdata = {
-  title: "Hi, I'm {Your Name}",
+  title: "Hi, I'm Naveen",
   animated: {
     first: "Technologist",
-    second: "Visionary",
-    third: "Ethical Hacker",
-    fourth: "Programmer",
-    fifth: "Malware Developer",
-    sixth: "Analyst",
+    second: "Technophile",
+    third: "Web Developer",
+    fourth: "MERN stack developer",
+    fifth: "Cross Platform Developer",
+    sixth: "Programer",
     // add more if you'd like but make sure to update /src/pages/home/index.js Line 29
   },
   description:
-    "Dedicated technology enthusiast with an insatiable curiosity for unraveling the complexities of our digital world.",
+    "An inquisitive mind surfing the waves of technology, blending creativity and curiosity to paint a unique portrait of the digital future.",
   your_img_url: "https://i.ibb.co/wRjcnGL/me.jpg",
 };
 
@@ -154,13 +155,13 @@ const dataportfolio = [
 ];
 
 const contactConfig = {
-  YOUR_EMAIL: "test@test.com",
+  YOUR_EMAIL: "naveenrameshcud@gmail.com",
   description: "Looking forward to hearing from you!",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: "SERVICE_ID",
-  YOUR_TEMPLATE_ID: "TEMPLATE_ID",
-  YOUR_USER_ID: "USER_ID (PUBLIC_KEY)",
+  YOUR_SERVICE_ID: "service_04lb2r9",
+  YOUR_TEMPLATE_ID: "template_nvonvpl",
+  YOUR_USER_ID: "ErUJqSHmC_GNgt8v1",
 };
 
 const socialprofils = {

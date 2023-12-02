@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Naveen2070.github.io/portfolio",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,7 @@
     "react-router-dom": "^6.6.2",
     "react-scripts": "^5.0.1",
     "react-transition-group": "^4.4.2",
+    "server": "^1.0.38",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^3.1.1"
   },
@@ -41,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }

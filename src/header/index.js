@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import "./style.css";
-import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
-import { logotext, socialprofils } from "../content_option";
-import Themetoggle from "../components/themetoggle";
+import React, { useState } from 'react';
+import './style.css';
+import { VscGrabber, VscClose } from 'react-icons/vsc';
+import { Link } from 'react-router-dom';
+import { logotext, socialprofils } from '../content_option';
+import Themetoggle from '../components/themetoggle';
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState('false');
 
   const handleToggle = () => {
     setActive(!isActive);
-    document.body.classList.toggle("ovhidden");
+    document.body.classList.toggle('ovhidden');
   };
 
   return (
@@ -28,7 +28,7 @@ const Headermain = () => {
           </div>
         </div>
 
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
+        <div className={`site__navigation ${!isActive ? 'menu__opend' : ''}`}>
           <div className="bg__menu h-100">
             <div className="menu__wrapper">
               <div className="menu__container p-3">
@@ -41,7 +41,7 @@ const Headermain = () => {
                   <li className="menu_item">
                     <Link
                       onClick={handleToggle}
-                      to="/portfolio"
+                      to="/projects"
                       className="my-3"
                     >
                       Portfolio

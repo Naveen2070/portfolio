@@ -1,6 +1,6 @@
-const logotext = 'N';
+const logotext = "N";
 const meta = {
-  title: 'Naveen R',
+  title: "Naveen R",
   description:
     "I'm Naveen, a technologist, technophile and MERN stack developer.",
 };
@@ -8,165 +8,132 @@ const meta = {
 const introdata = {
   title: "Hi, I'm Naveen",
   animated: {
-    first: 'Technologist',
-    second: 'Technophile',
-    third: 'Web Developer',
-    fourth: 'MERN stack developer',
-    fifth: 'Cross Platform Developer',
-    sixth: 'Programer',
+    first: "Technologist",
+    second: "Technophile",
+    third: "Web Developer",
+    fourth: "MERN stack developer",
+    fifth: "Cross Platform Developer",
+    sixth: "Programer",
     // add more if you'd like but make sure to update /src/pages/home/index.js Line 29
   },
   description:
-    'An inquisitive mind surfing the waves of technology, blending creativity and curiosity to paint a unique portrait of the digital future.',
-  your_img_url: 'https://i.ibb.co/wRjcnGL/me.jpg',
+    "An inquisitive mind surfing the waves of technology, blending creativity and curiosity to paint a unique portrait of the digital future.",
+  your_img_url: "https://i.ibb.co/wRjcnGL/me.jpg",
 };
 
 const dataabout = {
-  title: 'Who am I?',
+  title: "Who am I?",
   aboutme:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    "A dynamic Full Stack Developer with expertise in MERN stack, React Native, Next.js, JavaScript, SQL, Git, Python,HTML, and CSS. Passionate about continuous learning and technology integration, I excel in creating robust, scalable applications with seamless user experiences. Proficient in server-side rendering, mobile development, and version control, I bring a versatile skill set to foster innovation. Committed to staying abreast of emerging technologies, I am poised to contribute to dynamic projects, leveraging technical and analytical skills to drive excellence and create impactful solutions.",
 };
 const worktimeline = [
   {
-    jobtitle: 'Example 1',
-    where: 'Google',
-    date: '2023',
+    jobtitle: "Front End Developer Intern",
+    where: "Inspire Clean Energy, Chennai",
+    date: "November 2023 – Present",
   },
   {
-    jobtitle: 'Example 2',
-    where: 'Micosoft',
-    date: '2022',
+    jobtitle: "Full Stack Web Developer Intern",
+    where: "EnterOT, Coimbatore",
+    date: "July 2023 – October 2023",
   },
   {
-    jobtitle: 'Example 3',
-    where: 'Meta',
-    date: '2021',
+    jobtitle: "VLSI Design and Verification - Internship",
+    where: "TESSOLVE, Coimbatore",
+    date: "December 2022 – June 2023",
   },
 ];
 
 const skills = [
   {
-    name: 'Python',
+    name: "MERN stack",
   },
 
   {
-    name: 'C',
+    name: "React Native",
   },
 
   {
-    name: 'Java',
+    name: "Next.js",
   },
 
   {
-    name: 'Bash',
+    name: "JavaScript",
   },
 
   {
-    name: 'Powershell',
+    name: "SQL",
   },
 
   {
-    name: 'Reverse Engineering',
+    name: "Git",
   },
 
   {
-    name: 'Web-Exploitation',
+    name: "Python",
   },
 
   {
-    name: 'Network Exploitation',
+    name: "HTML & CSS",
   },
 ];
 
 const dataportfolio = [
   {
-    img: 'https://picsum.photos/400/?grayscale',
+    img: "https://picsum.photos/400/?grayscale",
     description:
-      'The wisdom of life consists in the elimination of non-essentials.',
-    link: '#',
+      "A custom ERP built by EnterOT for a customer in the jewelry industry. It is used for data management and sales management.",
+    link: "",
   },
   {
-    img: 'https://picsum.photos/400/800/?grayscale',
+    img: "https://picsum.photos/400/800/?grayscale",
     description:
-      'The wisdom of life consists in the elimination of non-essentials.',
-    link: '#',
+      "Sam's Corner is a React application featuring a blog section and a weather application.",
+    link: "https://sams-corner-react.onrender.com/",
   },
   {
-    img: 'https://picsum.photos/400/?grayscale',
+    img: "https://picsum.photos/400/?grayscale",
     description:
-      'The wisdom of life consists in the elimination of non-essentials.',
-    link: '#',
+      "My Resume is a Capstone project showcasing the resume built using HTML, CSS, and JavaScript.",
+    link: "https://naveen2070.github.io/resume/",
   },
   {
-    img: 'https://picsum.photos/400/600/?grayscale',
+    img: "https://picsum.photos/400/600/?grayscale",
     description:
-      'The wisdom of life consists in the elimination of non-essentials.',
-    link: '#',
+      "An IoT-based smart drip irrigation system using soil moisture and atmospheric temperature for automatic plant watering. It utilizes LoRa for short-range communication and Blynk for data visualization and long-range transmission.",
+    link: "",
   },
   {
-    img: 'https://picsum.photos/400/300/?grayscale',
+    img: "https://picsum.photos/400/300/?grayscale",
     description:
-      'The wisdom of life consists in the elimination of non-essentials.',
-    link: '#',
+      "LCDS (Lung Cancer Detection System) is a CAD system used for detecting lung cancer using CT scans. It employs a Deep Learning-based classification method, with RESNET 50 as the classification model and Tkinter library for the GUI.",
+    link: "",
   },
   {
-    img: 'https://picsum.photos/400/700/?grayscale',
+    img: "https://picsum.photos/400/700/?grayscale",
     description:
-      'The wisdom of life consists in the elimination of non-essentials.',
-    link: '#',
-  },
-
-  {
-    img: 'https://picsum.photos/400/600/?grayscale',
-    description:
-      'The wisdom of life consists in the elimination of non-essentials.',
-    link: '#',
+      "PHISTRAP is a web application for detecting phishing websites using Machine Learning. It utilizes the Random Forest algorithm for classification based on 16 features of a URL.",
+    link: "",
   },
   {
-    img: 'https://picsum.photos/400/300/?grayscale',
+    img: "https://picsum.photos/400/600/?grayscale",
     description:
-      'The wisdom of life consists in the elimination of non-essentials.',
-    link: '#',
-  },
-  {
-    img: 'https://picsum.photos/400/?grayscale',
-    description:
-      'The wisdom of life consists in the elimination of non-essentials.',
-    link: '#',
-  },
-  {
-    img: 'https://picsum.photos/400/550/?grayscale',
-    description:
-      'The wisdom of life consists in the elimination of non-essentials.',
-    link: '#',
-  },
-  {
-    img: 'https://picsum.photos/400/?grayscale',
-    description:
-      'The wisdom of life consists in the elimination of non-essentials.',
-    link: '#',
-  },
-  {
-    img: 'https://picsum.photos/400/700/?grayscale',
-    description:
-      'The wisdom of life consists in the elimination of non-essentials.',
-    link: '#',
+      "OERET is a mini project involving a bot built to monitor the ocean environment and act as an emergency transposer for shipwreck crews.",
+    link: "",
   },
 ];
 
 const contactConfig = {
-  YOUR_EMAIL: 'naveenrameshcud@gmail.com',
-  description: 'Looking forward to hearing from you!',
-  // creat an emailjs.com account
-  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: 'service_04lb2r9',
-  YOUR_TEMPLATE_ID: 'template_nvonvpl',
-  YOUR_USER_ID: 'ErUJqSHmC_GNgt8v1',
+  YOUR_EMAIL: "naveenrameshcud@gmail.com",
+  description: "Looking forward to hearing from you!",
+  YOUR_SERVICE_ID: "service_04lb2r9",
+  YOUR_TEMPLATE_ID: "template_nvonvpl",
+  YOUR_USER_ID: "ErUJqSHmC_GNgt8v1",
 };
 
 const socialprofils = {
-  github: 'https://github.com/Naveen2070',
-  linkedin: 'https://www.linkedin.com/in/naveen-r-550713204/',
+  github: "https://github.com/Naveen2070",
+  linkedin: "https://www.linkedin.com/in/naveen-r-550713204/",
 };
 export {
   meta,

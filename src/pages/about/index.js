@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from "react";
-import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Row, Col, Card, Container } from "react-bootstrap";
-import { dataabout, meta, worktimeline, skills } from "../../content_option";
+import React, { useState, useEffect } from 'react';
+import './style.css';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Row, Col, Card, Container } from 'react-bootstrap';
+import { dataabout, meta, worktimeline, skills } from '../../content_option';
 
 export const About = () => {
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState('');
 
   useEffect(() => {
-    setTheme(document.documentElement.getAttribute("data-theme"));
+    setTheme(document.documentElement.getAttribute('data-theme'));
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
-        if (mutation.attributeName === "data-theme") {
-          setTheme(mutation.target.getAttribute("data-theme"));
+        if (mutation.attributeName === 'data-theme') {
+          setTheme(mutation.target.getAttribute('data-theme'));
         }
       });
     });
     observer.observe(document.documentElement, {
       attributes: true,
-      attributeFilter: ["data-theme"],
+      attributeFilter: ['data-theme'],
     });
     return () => observer.disconnect();
   }, []);
@@ -31,7 +31,7 @@ export const About = () => {
           <title> About | {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <Row className="mb-3 mt-3 pt-md-3">
+        <Row className="mb-3 mt-1 pt-md-3">
           <Col lg="8">
             <h1 className="display-4 mb-4">About me</h1>
             <hr className="t_border my-4 ml-0 text-left" />
@@ -58,8 +58,8 @@ export const About = () => {
                   <tr key={i}>
                     <th
                       style={{
-                        color: theme === "dark" ? "white" : "black",
-                        backgroundColor: theme === "dark" ? "black" : "white",
+                        color: theme === 'dark' ? 'white' : 'black',
+                        backgroundColor: theme === 'dark' ? 'black' : 'white',
                       }}
                       scope="row"
                     >
@@ -67,16 +67,16 @@ export const About = () => {
                     </th>
                     <td
                       style={{
-                        color: theme === "dark" ? "white" : "black",
-                        backgroundColor: theme === "dark" ? "black" : "white",
+                        color: theme === 'dark' ? 'white' : 'black',
+                        backgroundColor: theme === 'dark' ? 'black' : 'white',
                       }}
                     >
                       {data.where}
                     </td>
                     <td
                       style={{
-                        color: theme === "dark" ? "white" : "black",
-                        backgroundColor: theme === "dark" ? "black" : "white",
+                        color: theme === 'dark' ? 'white' : 'black',
+                        backgroundColor: theme === 'dark' ? 'black' : 'white',
                       }}
                     >
                       {data.date}

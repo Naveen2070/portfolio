@@ -18,7 +18,7 @@ const introdata = {
   },
   description:
     'An inquisitive mind surfing the waves of technology, blending creativity and curiosity to paint a unique portrait of the digital future.',
-  your_img_url: 'https://i.ibb.co/wRjcnGL/me.jpg',
+  your_img_url: 'https://i.ibb.co/WpNPxDr/me-removebg.webp',
 };
 
 const dataabout = {
@@ -110,7 +110,7 @@ const dataportfolio = [
     link: '',
   },
   {
-    img: 'https://img.freepik.com/free-vector/hacker-icon-set-with-different-types-hackers-stealing-information-breaking-computer-system_1284-27935.jpg?size=626&ext=jpg&ga=GA1.1.1558771660.1701606651&semt=ais',
+    img: 'https://img.freepik.com/free-vector/phishing-account-concept_23-2148532228.jpg?size=626&ext=jpg&ga=GA1.1.1558771660.1701606651&semt=sph',
     description:
       'PHISTRAP is a web application for detecting phishing websites using Machine Learning. It utilizes the Random Forest algorithm for classification based on 16 features of a URL.',
     link: '',

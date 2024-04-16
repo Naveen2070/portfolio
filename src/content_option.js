@@ -87,9 +87,15 @@ const skills = [
 
 const dataportfolio = [
   {
-    img: 'https://i.ibb.co/VxTj355/Screenshot-2024-04-09-170151.png',
+    img: 'https://cdn.pixabay.com/photo/2014/10/17/11/53/blog-492184_640.jpg',
     description:
-      'A foodie community site built using Next.js and SQLite. This is part of a learning project built during my Next.js learning journey.',
+      'A tech blog built using Next.js where data is stored in Markdown format, created as part of a Next.js learning journey. Hosted using vercel and every new post has to be updated as markdown file .',
+    link: 'https://blog-proj-eta.vercel.app/',
+  },
+  {
+    img: 'https://img.freepik.com/free-photo/high-angle-indian-food-assortment_23-2148747704.jpg?t=st=1713268099~exp=1713271699~hmac=cd7f94f44b06cb631777c795258e66ab99f79c22391e3267dd5810663b1e1fcb&w=740',
+    description:
+      'A foodie community site hosted using vercel and built using Next.js and SQLite. This is part of a learning project built during my Next.js learning journey.',
     link: 'https://next-recipe-nine.vercel.app/',
   },
   {

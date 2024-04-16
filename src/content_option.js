@@ -24,11 +24,11 @@ const introdata = {
 const dataabout = {
   title: 'Who am I?',
   aboutme:
-    'A dynamic Full Stack Developer with expertise in MERN stack, React Native, Next.js, JavaScript, SQL, Git, Python,HTML, and CSS. Passionate about continuous learning and technology integration, I excel in creating robust, scalable applications with seamless user experiences. Proficient in server-side rendering, mobile development, and version control, I bring a versatile skill set to foster innovation. Committed to staying abreast of emerging technologies, I am poised to contribute to dynamic projects, leveraging technical and analytical skills to drive excellence and create impactful solutions.',
+    'A dynamic Full Stack and Cross Platform Developer with expertise in MERN stack, React Native, Next.js, JavaScript, SQL, Git, Python,HTML, and CSS. Passionate about continuous learning and technology integration, I excel in creating robust, scalable applications with seamless user experiences. Proficient in server-side rendering, mobile development, and version control, I bring a versatile skill set to foster innovation. Committed to staying abreast of emerging technologies, I am poised to contribute to dynamic projects, leveraging technical and analytical skills to drive excellence and create impactful solutions.',
 };
 const worktimeline = [
   {
-    jobtitle: 'Front End Developer Intern',
+    jobtitle: 'Junior Software Developer',
     where: 'Inspire Clean Energy, Chennai',
     date: 'November 2023 – Present',
   },
@@ -58,6 +58,10 @@ const skills = [
   },
 
   {
+    name: 'Flutter',
+  },
+
+  {
     name: 'JavaScript',
   },
 
@@ -72,6 +76,9 @@ const skills = [
   {
     name: 'Python',
   },
+  {
+    name: 'AI & ML',
+  },
 
   {
     name: 'HTML & CSS',
@@ -79,6 +86,12 @@ const skills = [
 ];
 
 const dataportfolio = [
+  {
+    img: 'https://i.ibb.co/VxTj355/Screenshot-2024-04-09-170151.png',
+    description:
+      'A foodie community site built using Next.js and SQLite. This is part of a learning project built during my Next.js learning journey.',
+    link: 'https://next-recipe-nine.vercel.app/',
+  },
   {
     img: 'https://img.freepik.com/free-vector/erp-enterprise-resource-planning-isometric-poster-productivity-improvement-system-data-analysis-business-integration-concept-business-people-working-office-scenes-3d-line-art-banner_107791-5691.jpg?size=626&ext=jpg&ga=GA1.1.1558771660.1701606651&semt=sph',
     description:

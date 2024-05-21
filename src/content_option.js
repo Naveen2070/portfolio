@@ -152,7 +152,7 @@ const contactConfig = {
 
 const socialprofils = {
   github: 'https://github.com/Naveen2070',
-  linkedin: 'https://www.linkedin.com/in/naveen-r-550713204/',
+  linkedin: 'https://www.linkedin.com/in/naveen-r-cud',
 };
 export {
   meta,

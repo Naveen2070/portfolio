@@ -15,7 +15,7 @@
   font-size: 16px;
   font-weight: 700;
   margin: 15px 0 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 @-webkit-keyframes animate-positive {
@@ -63,7 +63,7 @@
 }
 
 .skill-card {
-  width: 150px; /* Adjust the width based on your desired size */
+  width: 155px; /* Adjust the width based on your desired size */
   height: 80px; /* Set a fixed height to make all cards the same size */
   margin: 10px; /* Add some margin between the cards */
   border: 1px solid #00000000;
@@ -84,7 +84,7 @@
   text-align: center;
   font-size: 14px;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .skill-card:hover {
   transform: translateY(-5px);
@@ -95,7 +95,7 @@
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   flex: 1; /* Allow the font size to shrink if needed */
   display: flex;
   align-items: center;

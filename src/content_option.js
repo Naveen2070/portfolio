@@ -45,45 +45,184 @@ const worktimeline = [
 ];
 
 const skills = [
+  // Programming Languages
   {
-    name: 'MERN stack',
-  },
-
-  {
-    name: 'React Native',
-  },
-
-  {
-    name: 'Next.js',
-  },
-
-  {
-    name: 'Flutter',
-  },
-
-  {
+    group: 'Languages',
     name: 'JavaScript',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
   },
-
   {
-    name: 'SQL',
+    group: 'Languages',
+    name: 'TypeScript',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
   },
-
   {
-    name: 'Git',
+    group: 'Languages',
+    name: 'Go',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg',
   },
-
   {
+    group: 'Languages',
     name: 'Python',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+  },
+  // Frontend Technologies
+  {
+    group: 'Frontend',
+    name: 'React',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
   },
   {
-    name: 'AI & ML',
+    group: 'Frontend',
+    name: 'React Native',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+  },
+  {
+    group: 'Frontend',
+    name: 'Next.js',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+  },
+  {
+    group: 'Frontend',
+    name: 'Angular',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
+  },
+  {
+    group: 'Frontend',
+    name: 'Flutter',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
+  },
+  {
+    group: 'Frontend',
+    name: 'HTML',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+  },
+  {
+    group: 'Frontend',
+    name: 'CSS',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
   },
 
+  // Backend Technologies
   {
-    name: 'HTML & CSS',
+    group: 'Backend',
+    name: 'EXPRESS.js',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+  },
+  {
+    group: 'Backend',
+    name: 'Nest.js',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg',
+  },
+  // JavaScript Runtime
+  {
+    group: 'Backend',
+    name: 'Node.js',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+  },
+  {
+    group: 'Backend',
+    name: 'Bun',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bun/bun-original.svg',
+  },
+
+  // Databases
+  {
+    group: 'Databases',
+    name: 'PostgreSQL',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+  },
+  {
+    group: 'Databases',
+    name: 'MongoDB',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+  },
+
+  // DevOps & Tools
+  {
+    group: 'DevOps & Tools',
+    name: 'Docker',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+  },
+  {
+    group: 'DevOps & Tools',
+    name: 'Git',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+  },
+  {
+    group: 'DevOps & Tools',
+    name: 'Nginx',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg',
+  },
+  {
+    group: 'DevOps & Tools',
+    name: 'Redis',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg',
+  },
+
+  // APIs & Communication
+  {
+    group: 'APIs & Communication',
+    name: 'GraphQL',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
+  },
+  {
+    group: 'APIs & Communication',
+    name: 'RabbitMQ',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg',
+  },
+  {
+    group: 'APIs & Communication',
+    name: 'Firebase',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+  },
+  {
+    group: 'APIs & Communication',
+    name: 'Swagger',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg',
+  },
+
+  // Testing & Development Tools
+  {
+    group: 'Testing & Development Tools',
+    name: 'Jest',
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
   },
 ];
+
+const skillsGroups = [
+  {
+    name: 'Languages',
+    skills: skills.filter((skill) => skill.group === 'Languages'),
+  },
+  {
+    name: 'Frontend',
+    skills: skills.filter((skill) => skill.group === 'Frontend'),
+  },
+  {
+    name: 'Backend',
+    skills: skills.filter((skill) => skill.group === 'Backend'),
+  },
+  {
+    name: 'Databases',
+    skills: skills.filter((skill) => skill.group === 'Databases'),
+  },
+  {
+    name: 'DevOps & Tools',
+    skills: skills.filter((skill) => skill.group === 'DevOps & Tools'),
+  },
+  {
+    name: 'APIs & Communication',
+    skills: skills.filter((skill) => skill.group === 'APIs & Communication'),
+  },
+  {
+    name: 'Testing & Development Tools',
+    skills: skills.filter(
+      (skill) => skill.group === 'Testing & Development Tools'
+    ),
+  },
+];
+console.log(skillsGroups);
 
 const dataportfolio = [
   {
@@ -159,7 +298,7 @@ export {
   dataabout,
   dataportfolio,
   worktimeline,
-  skills,
+  skillsGroups,
   introdata,
   contactConfig,
   socialprofils,

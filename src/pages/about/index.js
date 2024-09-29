@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Row, Col, Card, Container } from 'react-bootstrap';
-import { dataabout, meta, worktimeline, skills } from '../../content_option';
+import {
+  dataabout,
+  meta,
+  worktimeline,
+  skillsGroups,
+} from '../../content_option';
 
 export const About = () => {
   const [theme, setTheme] = useState('');
@@ -92,15 +97,42 @@ export const About = () => {
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
           <Col lg="7" className="grid-container">
-            {skills.map((skill, i) => (
-              <div key={i}>
-                <Card className="skill-card">
-                  <Card.Body>
-                    <h3 className="card-title">{skill.name}</h3>
-                  </Card.Body>
-                </Card>
-              </div>
-            ))}
+            {skillsGroups.map(
+              (
+                group,
+                groupIndex // 'group' for outer map and unique 'groupIndex'
+              ) =>
+                group.skills.map(
+                  (
+                    skill,
+                    skillIndex // 'skillIndex' is unique within each group
+                  ) => (
+                    <div key={`${groupIndex}-${skillIndex}`}>
+                      <Card className="skill-card">
+                        <Card.Body style={{ display: 'flex' }}>
+                          {skill.img && (
+                            <img
+                              src={skill.img}
+                              alt={skill.name}
+                              preload="auto"
+                              placeholder="blur"
+                              style={{
+                                width: '50px',
+                                height: '50px',
+                                margin: '5px',
+                                borderRadius: '10%',
+                                objectFit: 'cover',
+                                objectPosition: 'center',
+                              }}
+                            />
+                          )}
+                          <h3 className="card-title">{skill.name}</h3>
+                        </Card.Body>
+                      </Card>
+                    </div>
+                  )
+                )
+            )}
           </Col>
         </Row>
       </Container>
